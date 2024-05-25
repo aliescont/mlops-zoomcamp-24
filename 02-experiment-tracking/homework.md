@@ -90,6 +90,7 @@ In addition to `backend-store-uri`, what else do you need to pass to properly co
 * `artifacts-only`
 * `artifacts-destination`
 
+`default-artifact-root`
 
 ## Q5. Tune model hyperparameters
 
@@ -110,10 +111,9 @@ The idea is to just log the information that you need to answer the question bel
 What's the best validation RMSE that you got?
 
 * 4.817
-* 5.335
+* 5.335 -> Answer
 * 5.818
 * 6.336
-
 
 ## Q6. Promote the best model to the model registry
 
@@ -130,7 +130,7 @@ Tip 2: to register the model you can use the method `mlflow.register_model` and 
 What is the test RMSE of the best model?
 
 * 5.060
-* 5.567
+* 5.567 -> Answer
 * 6.061
 * 6.568
 
