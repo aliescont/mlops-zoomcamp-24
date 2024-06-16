@@ -72,7 +72,7 @@ and `Pipfile.lock`. The `Pipfile.lock` file keeps the hashes of the
 dependencies we use for the virtual env.
 
 What's the first hash for the Scikit-Learn dependency?
-
+sha256:08ef968f6b72033c16c479c966bf37ccd49b06ea91b765e1cc27afefe723920b
 
 ## Q5. Parametrize the script
 
@@ -84,7 +84,7 @@ Run the script for April 2023.
 What's the mean predicted duration? 
 
 * 7.29
-* 14.29
+* 14.29 ->
 * 21.29
 * 28.29
 
@@ -126,7 +126,7 @@ to use the pickle file already in the image.
 Now run the script with docker. What's the mean predicted duration
 for May 2023? 
 
-* 0.19
+* 0.19 ->
 * 7.24
 * 14.24
 * 21.19
