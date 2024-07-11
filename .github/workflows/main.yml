@@ -10,7 +10,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+        
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          
       - name: Create Pull Request
         id: create_pr
         uses: peter-evans/create-pull-request@v6
