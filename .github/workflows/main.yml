@@ -1,0 +1,27 @@
+name: PR and Merge
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pr-and-auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-actions
+          title: 'Automated PR'
+          body: 'This PR adds new updates'
+          labels: 'automerge'
+
+      - name: Enable Auto-Merge
+        uses: pascalgn/automerge-action@v0.16.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
