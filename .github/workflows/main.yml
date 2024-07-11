@@ -16,6 +16,13 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           
+      - name: Create and Push Branch
+        run: |
+          git checkout -b gh-actions
+          git push origin gh-actions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Create Pull Request
         id: create_pr
         uses: peter-evans/create-pull-request@v6
