@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+evidently = "*"
+requests = "*"
+tqdm = "*"
+joblib = "*"
+pyarrow = "*"
+psycopg = "*"
+psycopg-binary = "*"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+jupyter = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
